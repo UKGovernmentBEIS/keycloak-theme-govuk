@@ -75,5 +75,20 @@
                 </ul>
             </div>
         </#if>
+    <#elseif section = "footer_links">
+        <div class="govuk-clearfix govuk-!-margin-bottom-2">
+            <span>
+                <a class="govuk-footer__link govuk-!-margin-right-2" target="_blank" rel="noopener" href="/terms-and-conditions?referred=true">Terms and conditions</a>
+                <span class="govuk-visually-hidden">(opens new window)</span>
+            </span>
+            <span>
+                <a class="govuk-footer__link govuk-!-margin-right-2" target="_blank" rel="noopener" href="/privacy-policy?referred=true">Privacy policy</a>
+                <span class="govuk-visually-hidden">(opens new window)</span>
+            </span>
+            <span>
+                <a class="govuk-footer__link govuk-!-margin-right-2" target="_blank" rel="noopener" href="/about?referred=true">About this service</a>
+                <span class="govuk-visually-hidden">(opens new window)</span>
+            </span>
+        </div>
     </#if>
 </@layout.registrationLayout>
