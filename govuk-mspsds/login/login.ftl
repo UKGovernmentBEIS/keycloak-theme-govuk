@@ -78,15 +78,15 @@
     <#elseif section = "footer_links">
         <div class="govuk-clearfix govuk-!-margin-bottom-2">
             <span>
-                <a class="govuk-footer__link govuk-!-margin-right-2" target="_blank" rel="noopener" href="/terms-and-conditions?referred=true">Terms and conditions</a>
+                <a class="govuk-footer__link govuk-!-margin-right-2" target="_blank" href="/help/terms-and-conditions">Terms and conditions</a>
                 <span class="govuk-visually-hidden">(opens new window)</span>
             </span>
             <span>
-                <a class="govuk-footer__link govuk-!-margin-right-2" target="_blank" rel="noopener" href="/privacy-policy?referred=true">Privacy policy</a>
+                <a class="govuk-footer__link govuk-!-margin-right-2" target="_blank" href="/help/privacy-policy">Privacy policy</a>
                 <span class="govuk-visually-hidden">(opens new window)</span>
             </span>
             <span>
-                <a class="govuk-footer__link govuk-!-margin-right-2" target="_blank" rel="noopener" href="/about?referred=true">About this service</a>
+                <a class="govuk-footer__link govuk-!-margin-right-2" target="_blank" href="/help/about">About this service</a>
                 <span class="govuk-visually-hidden">(opens new window)</span>
             </span>
         </div>
