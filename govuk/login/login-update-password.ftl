@@ -22,7 +22,7 @@
                     <span id="password-new-hint" class="govuk-hint">
                         ${msg("passwordNewHint")}
                     </span>
-                    <input type="password" id="password-new" name="password-new" class="govuk-input" autofocus autocomplete="new-password" aria-describedby="password-new-hint" />
+                    <input type="password" id="password-new" name="password-new" class="govuk-input" autocomplete="new-password" aria-describedby="password-new-hint" />
                 </div>
 
                 <div class="govuk-form-group  ${errorClass!""}">

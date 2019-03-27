@@ -12,7 +12,7 @@
                 <#if password.passwordSet>
                     <div class="govuk-form-group">
                         <label for="password" class="govuk-label">${msg("password")}</label>
-                        <input type="password" class="govuk-input" id="password" name="password" autofocus autocomplete="current-password">
+                        <input type="password" class="govuk-input" id="password" name="password" autocomplete="current-password">
                     </div>
                 </#if>
 

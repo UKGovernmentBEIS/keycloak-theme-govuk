@@ -32,7 +32,7 @@
             <form id="kc-form-login" class="${properties.kcFormClass!} govuk-grid-column-two-thirds" action="${url.loginAction}" method="post">
                 <div class="govuk-form-group ${errorClass!""}">
                     <label for="username" class="govuk-label"><#if !realm.loginWithEmailAllowed>${msg("username")}<#elseif !realm.registrationEmailAsUsername>${msg("usernameOrEmail")}<#else>${msg("email")}</#if></label>
-                    <input id="username" class="govuk-input" name="username" value="${(login.username!'')}" type="text" autofocus autocomplete="off" />
+                    <input id="username" class="govuk-input" name="username" value="${(login.username!'')}" type="text" autocomplete="off" />
                 </div>
 
                 <div class="govuk-form-group ${errorClass!""}">

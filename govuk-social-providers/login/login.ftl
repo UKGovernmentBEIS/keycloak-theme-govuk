@@ -19,7 +19,7 @@
                                 <#if usernameEditDisabled??>
                                     <input id="username" class="govuk-input" name="username" value="${(login.username!'')}" type="text" disabled />
                                 <#else>
-                                    <input id="username" class="govuk-input" name="username" value="${(login.username!'')}" type="text" autofocus autocomplete="off" />
+                                    <input id="username" class="govuk-input" name="username" value="${(login.username!'')}" type="text" autocomplete="off" />
                                 </#if>
                             </div>
                         </div>

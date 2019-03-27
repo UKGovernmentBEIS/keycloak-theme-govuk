@@ -20,7 +20,7 @@
                 </div>
 
                 <div class="col-sm-10 col-md-10">
-                    <input type="password" class="form-control" id="password" name="password" autofocus autocomplete="current-password">
+                    <input type="password" class="form-control" id="password" name="password" autocomplete="current-password">
                 </div>
             </div>
         </#if>

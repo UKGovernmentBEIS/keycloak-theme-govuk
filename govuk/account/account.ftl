@@ -15,7 +15,7 @@
                     </#if>
                 <div class="govuk-form-group ${messagesPerField.printIfExists('email','govuk-form-group--error')}">
                     <label for="email" class="govuk-label">${msg("email")}</label>
-                    <input type="text" class="govuk-input" id="email" name="email" autofocus value="${(account.email!'')}"/>
+                    <input type="text" class="govuk-input" id="email" name="email" value="${(account.email!'')}"/>
                 </div>
 
                 <div class="govuk-form-group ${messagesPerField.printIfExists('firstName','govuk-form-group--error')}">
@@ -29,7 +29,7 @@
                 </div>
 
                 <div class="govuk-form-group">
-                    <#if url.referrerURI??><a href="${url.referrerURI}">${kcSanitize(msg("backToApplication")?no_esc)}</a></#if>
+                    <#if url.referrerURI??><a class="govuk-link" href="${url.referrerURI}">${kcSanitize(msg("backToApplication")?no_esc)}</a></#if>
                     <button type="submit" class="govuk-button" name="submitAction" value="Save">${msg("doSave")}</button><br/>
                     <a href="${url.accountUrl}" class="govuk-link govuk-body" name="submitAction">${msg("doCancel")}</a>
                 </div>

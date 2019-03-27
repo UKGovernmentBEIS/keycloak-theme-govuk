@@ -12,7 +12,7 @@
                 </div>
 
                 <div class="${properties.kcInputWrapperClass!}">
-                    <input id="totp" name="totp" autocomplete="off" type="text" class="govuk-input" autofocus />
+                    <input id="totp" name="totp" autocomplete="off" type="text" class="govuk-input" />
                 </div>
             </div>
 
