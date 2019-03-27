@@ -105,13 +105,10 @@
             <div class="govuk-grid-row">
                 <div class="govuk-grid-column-one-third">
                     <ul class="govuk-list">
+                        <li class="<#if active=='applications'>active</#if> heading-small"><a href="${url.applicationsUrl}" class="govuk-link">${msg("Your services")}</a></li>
                         <li class="<#if active=='account'>active</#if> heading-small"><a href="${url.accountUrl}" class="govuk-link">${msg("account")}</a></li>
                         <#if features.passwordUpdateSupported><li class="<#if active=='password'>active</#if> heading-small"><a href="${url.passwordUrl}" class="govuk-link">${msg("password")}</a></li></#if>
-                        <li class="<#if active=='totp'>active</#if> heading-small"><a href="${url.totpUrl}" class="govuk-link">${msg("authenticator")}</a></li>
                         <#if features.identityFederation><li class="<#if active=='social'>active</#if> heading-small"><a href="${url.socialUrl}" class="govuk-link">${msg("federatedIdentity")}</a></li></#if>
-                        <li class="<#if active=='sessions'>active</#if> heading-small"><a href="${url.sessionsUrl}" class="govuk-link">${msg("sessions")}</a></li>
-                        <li class="<#if active=='applications'>active</#if> heading-small"><a href="${url.applicationsUrl}" class="govuk-link">${msg("applications")}</a></li>
-                        <#if features.log><li class="<#if active=='log'>active</#if> heading-small"><a href="${url.logUrl}" class="govuk-link">${msg("log")}</a></li></#if>
                         <#if realm.userManagedAccessAllowed && features.authorization><li class="<#if active=='authorization'>active</#if> heading-small"><a href="${url.resourceUrl}" class="govuk-link">${msg("myResources")}</a></li></#if>
                     </ul>
                 </div>
