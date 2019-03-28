@@ -104,13 +104,15 @@
         <main role="main" class="govuk-main-wrapper" id="main-content">
             <div class="govuk-grid-row">
                 <div class="govuk-grid-column-one-third">
-                    <ul class="govuk-list">
-                        <li class="<#if active=='applications'>active</#if> heading-small"><a href="${url.applicationsUrl}" class="govuk-link">${msg("applications")}</a></li>
-                        <li class="<#if active=='account'>active</#if> heading-small"><a href="${url.accountUrl}" class="govuk-link">${msg("account")}</a></li>
-                        <#if features.passwordUpdateSupported><li class="<#if active=='password'>active</#if> heading-small"><a href="${url.passwordUrl}" class="govuk-link">${msg("password")}</a></li></#if>
-                        <#if features.identityFederation><li class="<#if active=='social'>active</#if> heading-small"><a href="${url.socialUrl}" class="govuk-link">${msg("federatedIdentity")}</a></li></#if>
-                        <#if realm.userManagedAccessAllowed && features.authorization><li class="<#if active=='authorization'>active</#if> heading-small"><a href="${url.resourceUrl}" class="govuk-link">${msg("myResources")}</a></li></#if>
-                    </ul>
+                    <nav>
+                        <ul class="govuk-list">
+                            <li class="<#if active=='applications'>active</#if> heading-small"><a href="${url.applicationsUrl}" class="govuk-link govuk-link--no-visited-state">${msg("applications")}</a></li>
+                            <li class="<#if active=='account'>active</#if> heading-small"><a href="${url.accountUrl}" class="govuk-link govuk-link--no-visited-state">${msg("account")}</a></li>
+                            <#if features.passwordUpdateSupported><li class="<#if active=='password'>active</#if> heading-small"><a href="${url.passwordUrl}" class="govuk-link govuk-link--no-visited-state">${msg("password")}</a></li></#if>
+                            <#if features.identityFederation><li class="<#if active=='social'>active</#if> heading-small"><a href="${url.socialUrl}" class="govuk-link govuk-link--no-visited-state">${msg("federatedIdentity")}</a></li></#if>
+                            <#if realm.userManagedAccessAllowed && features.authorization><li class="<#if active=='authorization'>active</#if> heading-small"><a href="${url.resourceUrl}" class="govuk-link govuk-link--no-visited-state">${msg("myResources")}</a></li></#if>
+                        </ul>
+                    </nav>
                 </div>
                 <div class="govuk-grid-column-two-thirds">
                     <#if message?has_content>
