@@ -6,7 +6,6 @@
     <div class="govuk-grid-row">
         <div class="govuk-grid-column-two-thirds">
             <form action="${url.passwordUrl}" class="form-horizontal" method="post">
-                <span class="govuk-hint">${msg("allFieldsRequired")}</span>
                 <input type="text" id="username" name="username" value="${(account.username!'')}" autocomplete="username" readonly="readonly" style="display:none;">
 
                 <#if password.passwordSet>

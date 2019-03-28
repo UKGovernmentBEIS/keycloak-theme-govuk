@@ -31,7 +31,7 @@
                 <div class="govuk-form-group">
                     <#if url.referrerURI??><a class="govuk-link" href="${url.referrerURI}">${kcSanitize(msg("backToApplication")?no_esc)}</a></#if>
                     <button type="submit" class="govuk-button" name="submitAction" value="Save">${msg("doSave")}</button><br/>
-                    <a href="${url.accountUrl}" class="govuk-link govuk-body" name="submitAction">${msg("doCancel")}</a>
+                    <a href="${url.accountUrl}" class="govuk-link govuk-body govuk-link--no-visited-state" name="submitAction">${msg("doCancel")}</a>
                 </div>
             </form>
         </div>
