@@ -145,7 +145,11 @@ C13.7,13.2,13.2,13.7,12.5,13.7z M12.5,0.5c-6.6,0-12,5.4-12,12s5.4,12,12,12s12-5.
                             </svg>
                         </#if>
                         <div class="hmcts-banner__message">
-                            <span class="hmcts-banner__assistive">Success</span>
+                            <span class="hmcts-banner__assistive">
+                                <#if message.type = 'success'>Success: </#if>
+                                <#if message.type = 'warning'>Warning: </#if>
+                                <#if message.type = 'info'></#if>
+                            </span>
                             ${message.summary?no_esc}
                         </div>
 
