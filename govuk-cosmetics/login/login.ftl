@@ -25,7 +25,7 @@
         <div class="govuk-grid-row">
             <#if realm.registrationAllowed && !usernameEditDisabled??>
                 <div id="kc-registration" class="govuk-grid-column-full">
-                    <p>${msg("registerText")} <a class="govuk-link" href="${url.registrationUrl}">${msg("registerLink")}.</a></p>
+                    <p>${msg("registerText")} <a class="govuk-link" href="${url.registrationUrl}">${msg("registerLink")}</a>.</p>
                 </div>
             </#if>
 
