@@ -17,7 +17,7 @@
             <form id="kc-reset-password-form" class="${properties.kcFormClass!} govuk-grid-column-two-thirds" action="${url.loginAction}" method="post">
                 <div class="govuk-form-group ${errorClass!""}">
                     <label for="username" class="govuk-label"><#if !realm.loginWithEmailAllowed>${msg("username")}<#elseif !realm.registrationEmailAsUsername>${msg("usernameOrEmail")}<#else>${msg("email")}</#if></label>
-                    <input type="text" id="username" name="username" class="govuk-input" autofocus/>
+                    <input type="text" id="username" name="username" class="govuk-input"/>
                 </div>
 
                 <div class="govuk-form-group">

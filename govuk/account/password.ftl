@@ -6,24 +6,26 @@
     <div class="govuk-grid-row">
         <div class="govuk-grid-column-two-thirds">
             <form action="${url.passwordUrl}" class="form-horizontal" method="post">
-                <span class="govuk-hint">${msg("allFieldsRequired")}</span>
+                <#if message?has_content && message.type = "error">
+                    <#assign errorClass = "govuk-form-group--error" >
+                </#if>
+                <input type="hidden" id="stateChecker" name="stateChecker" value="${stateChecker}">
                 <input type="text" id="username" name="username" value="${(account.username!'')}" autocomplete="username" readonly="readonly" style="display:none;">
 
                 <#if password.passwordSet>
-                    <div class="govuk-form-group">
+                    <div class="govuk-form-group ${errorClass!""}"">
                         <label for="password" class="govuk-label">${msg("password")}</label>
-                        <input type="password" class="govuk-input" id="password" name="password" autofocus autocomplete="current-password">
+                        <input type="password" class="govuk-input" id="password" name="password" autocomplete="current-password">
                     </div>
                 </#if>
 
-                <input type="hidden" id="stateChecker" name="stateChecker" value="${stateChecker}">
 
-                <div class="govuk-form-group">
+                <div class="govuk-form-group ${errorClass!""}"">
                     <label for="password-new" class="govuk-label">${msg("passwordNew")}</label>
                     <input type="password" class="govuk-input" id="password-new" name="password-new" autocomplete="new-password">
                 </div>
 
-                <div class="govuk-form-group">
+                <div class="govuk-form-group ${errorClass!""}"">
                     <label for="password-confirm" class="govuk-label" class="two-lines">${msg("passwordConfirm")}</label>
                     <input type="password" class="govuk-input" id="password-confirm" name="password-confirm" autocomplete="new-password">
                 </div>

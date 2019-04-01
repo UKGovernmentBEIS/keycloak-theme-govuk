@@ -77,7 +77,7 @@
         <input type="hidden" id="stateChecker" name="stateChecker" value="${stateChecker}">
         <div class="govuk-form-group">
             <label for="totp" class="govuk-label">${msg("authenticatorCode")}</label>
-            <input type="text" class="govuk-input" id="totp" name="totp" autocomplete="off" autofocus autocomplete="off">
+            <input type="text" class="govuk-input" id="totp" name="totp" autocomplete="off" autocomplete="off">
             <input type="hidden" id="totpSecret" name="totpSecret" value="${totp.totpSecret}" />
         </div>
 
