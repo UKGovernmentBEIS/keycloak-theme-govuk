@@ -12,10 +12,7 @@
             ${msg("emailVerifyInstruction2")}
         </p>
         <p class="instruction">
-            ${msg("emailVerifyInstruction3")} <a class="govuk-link" href="${url.loginAction}">${msg("doResendEmail")}</a>
-        </p>
-        <p>
-            <a class="govuk-link" href="${url.loginRestartFlowUrl}">${msg("returnToLogin")}</a>
+            ${msg("emailVerifyInstruction3")} <a class="govuk-link" href="${url.loginAction}">${msg("doResendEmail")}</a>.
         </p>
     </#if>
 </@layout.registrationLayout>
