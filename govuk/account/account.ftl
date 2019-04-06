@@ -20,12 +20,8 @@
 
                 <div class="govuk-form-group ${messagesPerField.printIfExists('firstName','govuk-form-group--error')}">
                     <label for="firstName" class="govuk-label">${msg("firstName")}</label>
-                    <input type="text" class="govuk-input" id="firstName" name="firstName" value="${(account.firstName!'')}"/>
-                </div>
-
-                <div class="govuk-form-group ${messagesPerField.printIfExists('lastName','govuk-form-group--error')}">
-                    <label for="lastName" class="govuk-label">${msg("lastName")}</label>
-                    <input type="text" class="govuk-input" id="lastName" name="lastName" value="${(account.lastName!'')}"/>
+                    <input type="text" class="govuk-input" id="firstName" name="firstName" value="${(account.firstName!'')}" autocomplete="name"/>
+                    <input type="hidden" id="lastName" name="lastName" readonly value="n/a"/>
                 </div>
 
                 <div class="govuk-form-group">
