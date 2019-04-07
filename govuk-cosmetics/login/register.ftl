@@ -59,7 +59,7 @@
             </div>
 
             <#if passwordRequired>
-                <div class="govuk-form-group ${messagesPerField.printIfExists('password',properties.kcFormGroupErrorClass!)}">
+                <div class="govuk-form-group ${messagesPerField.printIfExists('password',properties.kcFormGroupErrorClass!)} ${messagesPerField.printIfExists('password-confirm',properties.kcFormGroupErrorClass!)}">
                     <div class="${properties.kcLabelWrapperClass!}">
                         <label for="password" class="govuk-label">${msg("createPassword")}</label>
                         <span id="password-hint" class="govuk-hint">${msg("passwordHint")}</span>
