@@ -19,13 +19,9 @@
             </div>
 
             <div class="govuk-form-group ${messagesPerField.printIfExists('firstName',properties.kcFormGroupErrorClass!)}">
-                <label for="email" class="govuk-label">${msg("firstName")}</label>
-                <input type="text" id="firstName" name="firstName" value="${(user.firstName!'')}" class="govuk-input" />
-            </div>
-
-            <div class="govuk-form-group ${messagesPerField.printIfExists('lastName',properties.kcFormGroupErrorClass!)}">
-                <label for="email" class="govuk-label">${msg("lastName")}</label>
-                <input type="text" id="lastName" name="lastName" value="${(user.lastName!'')}" class="govuk-input" />
+                <label for="firstName" class="govuk-label">${msg("firstName")}</label>
+                <input type="text" class="govuk-input" id="firstName" name="firstName" value="${(user.firstName!'')}" autocomplete="name" />
+                <input type="hidden" id="lastName" name="lastName" readonly value="n/a" />
             </div>
 
             <div class="govuk-form-group">
