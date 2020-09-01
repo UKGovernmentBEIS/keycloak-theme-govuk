@@ -6,7 +6,7 @@
     "npm-sass": "^2.2.1",
     "oldie": "^1.3.0",
     "postcss": "^7.0.5",
-    "postcss-cli": "^6.0.0"
+    "postcss-cli": "^7.1.2"
   },
   "scripts": {
     "build": "npm-run-all build:sass build:assets",
