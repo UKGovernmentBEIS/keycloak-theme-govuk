@@ -1,0 +1,48 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  reviewers:
+  - jasiekmiko
+  - broder
+  - tom-bell-softwire
+  ignore:
+  - dependency-name: npm
+    versions:
+    - 7.10.0
+    - 7.11.0
+    - 7.5.2
+    - 7.5.3
+    - 7.5.4
+    - 7.5.5
+    - 7.5.6
+    - 7.6.0
+    - 7.6.1
+    - 7.6.2
+    - 7.6.3
+    - 7.7.0
+    - 7.7.1
+    - 7.7.2
+    - 7.7.3
+    - 7.7.4
+    - 7.7.5
+    - 7.7.6
+    - 7.8.0
+    - 7.9.0
+  - dependency-name: postcss
+    versions:
+    - 8.2.10
+    - 8.2.11
+    - 8.2.12
+    - 8.2.4
+    - 8.2.5
+    - 8.2.6
+    - 8.2.7
+    - 8.2.8
+    - 8.2.9
+  - dependency-name: govuk-frontend
+    versions:
+    - 3.10.2
